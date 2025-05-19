@@ -1,0 +1,6 @@
+User-agent: BadBot *
+Disallow: /admin_dashboard
+Disallow: /manage_users
+Disallow: /login
+Disallow: /signup
+Disallow: /forget_password

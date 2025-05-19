@@ -1,0 +1,6 @@
+# Prevent direct access to database connection file
+
+<Files "db_connection.php">
+Order Allow,Deny
+Deny from all
+</Files>

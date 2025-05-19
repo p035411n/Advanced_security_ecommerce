@@ -1,0 +1,315 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background: #007bff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* Hero Section with Responsive Background Image */
+.hero {
+    background: url('images/ecommerce.jpg') no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #ff6600;
+    color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #cc5500;
+}
+
+
+/* Home Details */
+.home-details {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.column {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    color: #ffcc00;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+   margin: 6px;
+   padding: 3px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    
+}
+
+
+/* Responsive Design */
+
+
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        padding-top: 10px;
+    }
+
+    .hero {
+        height: 85vh;
+        padding: 20px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .column {
+        padding: 15px;
+    }
+
+    .footer-columns {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .footer-column {
+        flex: 1 1 45%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+/* Tablets and Smaller Screens (768px and below) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        background-attachment: scroll;
+        height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+
+
+    .home-details {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .column {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .hero {
+        height: 80vh;
+        background-position: center;
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 8px 12px;
+        display: block;
+        text-align: center;
+    }
+    .column {
+        padding: 10px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}

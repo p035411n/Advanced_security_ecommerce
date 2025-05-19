@@ -1,0 +1,146 @@
+/* General Payment Page Styling */
+#payment {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+/* Payment Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #ffcc00;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background: #e6b800;
+    transform: scale(1.03);
+}
+
+/* Responsive Design */
+
+/* Large Screens (Desktops & Laptops) */
+@media screen and (min-width: 1024px) {
+    #payment {
+        max-width: 600px;
+        padding: 30px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    button {
+        font-size: 20px;
+        padding: 16px;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 1024px) {
+    #payment {
+        max-width: 85%;
+        padding: 22px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    label {
+        font-size: 16px;
+    }
+    input[type="text"], input[type="email"] {
+        font-size: 15px;
+        padding: 10px;
+    }
+    button {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+/* Small Screens (Phones) */
+@media screen and (max-width: 768px) {
+    #payment {
+        max-width: 92%;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    label {
+        font-size: 15px;
+    }
+    input[type="text"], input[type="email"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+    button {
+        font-size: 17px;
+        padding: 12px;
+    }
+}
+
+/* Extra Small Screens (Phones Below 480px) */
+@media screen and (max-width: 480px) {
+    #payment {
+        max-width: 98%;
+        padding: 18px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input[type="text"], input[type="email"] {
+        font-size: 14px;
+        padding: 9px;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
